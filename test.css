@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Montserrat:wght@200;400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 3vw 14vw;
+    font-family: 'Gideon Roman';
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  header {
+    position: relative;
+  }
+  
+  header h1 {
+    font-size: 2vw;
+    margin: 0;
+  }
+
+  header img{
+    margin-top: .5vw;
+    width: 16vw;
+  }
+  
+  img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .service-blocks {
+    margin-top: 10vh;
+    margin-bottom: 13vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .service-block {
+    width: 20vw;
+    height: 25vw;
+    background-size: cover;
+    position: relative;
+    transition: all .2s ease;
+  }
+
+  .service-block:hover{
+    transform: translateY(-5px);
+  }
+  
+  .service-block:nth-child(1) {
+    background-image: url('pic 1.jpg');
+  }
+  
+  .service-block:nth-child(2) {
+    background-image: url('pic 2.jpg');
+  }
+  
+  .service-block:nth-child(3) {
+    background-image: url('pic 3.jpg');
+  }
+  
+  .caption {
+    position: absolute;
+    text-align: left;
+    background-color: white;
+    padding: 2vh .8vw;
+    bottom: -5vh;
+    left: 3vw;
+    width: auto;
+    filter: drop-shadow(10px 10px 10px rgb(237, 237, 237));
+  }
+
+  .caption h4{
+    margin: 0;
+    font-size: 1.2vw;
+  }
+
+  .caption p{
+    width: 90%;
+    font-size: .8vw;
+    font-family: 'Montserrat';
+    margin-top: .5vw;
+  }
+
+  .action{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .action img{
+    width: 4vw;
+    margin: 0;
+  }
+
+  .action a{
+    margin-left: .5vw;
+    text-decoration: none;
+    color: rgba(236, 85, 152, 1);
+    font-weight: 500;
+    font-family: 'Montserrat';
+    font-size: .8vw;
+  }
+  
+  button{
+    font-size: .7vw;
+    color: rgba(255, 66, 127, 1);
+    font-weight: 600;
+    background-color: transparent;
+    padding: .8vw 1.8vw;
+    border: 1.5px solid rgba(255, 66, 127, 1);
+    border-radius: 5px;
+    transition: all .2s ease;
+  }
+
+  button:hover{
+    color: rgb(126, 32, 62);
+    border: 1.5px solid rgb(126, 32, 62);
+    cursor: pointer;
+  }
+
+  @media(max-width: 1000px){
+    body {
+        margin: 0;
+        padding: 10vw 4vw;
+        font-family: 'Gideon Roman';
+        text-align: center;
+        height: 100vh;
+        overflow: visible;
+        background-color: white;
+      }
+      
+      header {
+        position: relative;
+      }
+      
+      header h1 {
+        font-size: 8vw;
+        margin: 0;
+      }
+    
+      header img{
+        margin-top: .5vw;
+        width: 50vw;
+      }
+      
+      img {
+        width: 150px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+      
+      .service-blocks {
+        margin-top: 5vh;
+        margin-bottom: 8vh;
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+      }
+      
+      .service-block {
+        width: auto;
+        height: 50vh;
+        background-size: cover;
+        position: relative;
+        transition: all .2s ease;
+        margin-bottom: 10vh;
+      }
+    
+      .service-block:hover{
+        transform: translateY(0px);
+      }
+      
+      .service-block:nth-child(1) {
+        background-image: url('pic 2.jpg');
+      }
+      
+      .service-block:nth-child(2) {
+        background-image: url('pic 1.jpg');
+      }
+      
+      .service-block:nth-child(3) {
+        background-image: url('pic 3.jpg');
+      }
+      
+      .caption {
+        position: absolute;
+        text-align: left;
+        background-color: white;
+        padding: 3vh 5vw;
+        bottom: -5vh;
+        right: 10vw;
+        left: auto;
+        width: auto;
+        filter: drop-shadow(-10px 10px 10px rgb(237, 237, 237));
+      }
+    
+      .caption h4{
+        margin: 0;
+        font-size: 6vw;
+      }
+    
+      .caption p{
+        width: 90%;
+        font-size: 3.5vw;
+        font-family: 'Montserrat';
+        margin-top: .5vw;
+      }
+    
+      .action{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
+    
+      .action img{
+        width: 14vw;
+        margin: 0;
+      }
+    
+      .action a{
+        margin-left: 2vw;
+        text-decoration: none;
+        color: rgba(236, 85, 152, 1);
+        font-weight: 500;
+        font-family: 'Montserrat';
+        font-size: 4vw;
+      }
+      
+      button{
+        font-size: 3.5vw;
+        color: rgba(255, 66, 127, 1);
+        font-weight: 400;
+        background-color: transparent;
+        padding: 5vw 9vw;
+        border: 1.5px solid rgba(255, 66, 127, 1);
+        border-radius: 5px;
+        transition: all .2s ease;
+        margin-bottom: 5vh;
+      }
+    
+      button:hover{
+        color: rgb(126, 32, 62);
+        border: 1.5px solid rgb(126, 32, 62);
+        cursor: pointer;
+      }
+  }
